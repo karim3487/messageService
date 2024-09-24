@@ -85,6 +85,7 @@ dmypy.json
 cython_debug/
 instance/*
 !instance/.gitignore
+.DS_Store
 
 # Credentails and Token
 credentials.json
