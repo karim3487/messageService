@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "messageservice"
+version = "0.1.0"
+description = ""
+authors = ["Karim Kabirov <karim3487@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^3.0.3"
+google-auth-oauthlib = "^1.2.1"
+celery = "^5.4.0"
+redis = "^5.0.8"
+google-auth = "^2.35.0"
+environs = "^11.0.0"
+google-api-python-client = "^2.146.0"
+httplib2shim = "^0.0.3"
+gevent = "^24.2.1"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
