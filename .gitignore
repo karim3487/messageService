@@ -90,3 +90,6 @@ instance/*
 # Credentails and Token
 credentials.json
 token.json
+
+# Deploy
+deploy.md
