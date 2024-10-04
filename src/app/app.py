@@ -99,5 +99,15 @@ def send_tg_message():
     )
 
 
+@app.route("/clear-cache", methods=["POST"])
+def clear_cache():
+    try:
+        redis_client.flushdb()
+        return jsonify({"success": True, "detail": "Cache cleared"}), 200
+    except Exception as e:
+        logging.error(f"Error clearing cache: {e}")
+        return jsonify({"success": False, "detail": "Failed to clear cache"}), 500
+
+
 if __name__ == "__main__":
     app.run(debug=True)
